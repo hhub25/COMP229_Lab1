@@ -1,0 +1,83 @@
+body{
+    margin-top:2%; 
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: rgb(80, 79, 79);
+    background-image: url("b.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: sans-serif;
+    border-color: rgb(194, 222, 68);
+    border-style:groove; 
+    border-width:5px;
+}
+#year{
+    width:300px;
+}
+th{
+    font-size: 19;
+}
+img{
+    width: 1150px; 
+    height: 190px;
+    margin-top: 10px;
+}
+table{
+    width: 1000px;
+}
+#course{
+    width: 842px;
+}
+#inst
+{
+    width: 918px;
+}
+#best
+{
+    width: 670px;
+}
+#improve
+{
+    width: 709px;
+}
+#extra
+{
+    height: 100px;
+    width: 820px;
+    resize: none;
+}
+#title{
+    background-color: rgb(194, 222, 68);
+}
+#other{
+    background-color: rgb(194, 222, 68);
+    font-weight: normal;
+}
+li{
+    margin-top: 10px;
+}
+ol{
+    padding-left: 24px;
+    margin-bottom: 0px;
+}
+.t{
+    vertical-align: top;
+}
+hr{
+    border-style:outset; 
+    border-width:3px;
+    border-color: rgb(194, 222, 68);
+}
+a:visited{
+    color: pink;
+}
+
+a:link{
+    color: rgb(80, 79, 79);
+}
+
+a:hover{
+    color: rgb(194, 222, 68);
+}

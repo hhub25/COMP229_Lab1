@@ -1,0 +1,64 @@
+<!-- Greetings -->
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<!--<img src="img/logo.png" alt="logo">-->
+
+<main class="container">
+    <div class="jumbotron">
+        <h1 class="display-4" style="font-size: 2.5em; font-weight: bold; color: rgb(207, 180, 90); margin-top: 50px; margin-bottom: 40px;">───────────────────<span style=" color: rgb(0, 0, 0);"> <%= title %> </span>────────────────────</h1>
+    </div>
+
+    <div class="row flex-column">
+        <!-- Contact Information -->
+        <div class="col-md-6 mb-4" style="margin-left: 300px;">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Contact Information</h3>
+                </div>
+                <div class="card-body">
+                    <p><strong>Phone:</strong> 437-424-8533</p>
+                    <p><strong>Email:</strong> hetvi853@gmail.com</p>
+                    <p><strong>Address:</strong> 146 Pandora Circle, Scarborough, Toronto, ON</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="col-md-6" style="margin-left: 300px; margin-bottom: 70px;">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Contact Form</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactNumber">Contact Number</label>
+                            <input type="tel" class="form-control" id="contactNumber" name="contactNumber" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="margin-top: 20px;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>

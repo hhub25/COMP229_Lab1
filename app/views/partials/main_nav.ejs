@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    code {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 14px;
+    }
+  </style>
+  <title>Your Title Here</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid">
+      <img src="/img/Rvv.jpeg" alt="logo" style="width: 130px; height: 100px;">
+      <a class="navbar-brand" href="#" style="margin-left: 20px; font-weight: 600; font-size: 30px; color: rgb(207, 180, 90);">COMP229</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-max ml-auto mb-2 mb-lg-0">
+          <b>
+            <% if (title=="Home"){%>
+            <li class="nav-item active">
+              <%}else{%>
+                <li class="nav-item">
+                  <%}%>
+                  <a class="nav-link" href="/" style="color: rgb(248, 248, 248);"><i class="fas fa-lg fa-laptop-house"></i>Home</a>
+                </li>
+                <% if (title=="Projects"){%>
+                <li class="nav-item active">
+                  <%}else{%>
+                    <li class="nav-item">
+                      <%}%>
+                      <a class="nav-link" href="/projects" style="color: rgb(255, 255, 255); margin-left: 20px;"><i class="fa-brands fa-product-hunt"></i>Projects</a>
+                    </li>
+                    <% if (title=="Services"){%>
+                    <li class="nav-item active">
+                      <%}else{%>
+                        <li class="nav-item">
+                          <%}%>
+                          <a class="nav-link" href="/services" style="color: rgb(255, 255, 255); margin-left: 20px;"><i class="fa-brands fa-servicestack"></i>Services</a>
+                        </li>
+                        <% if (title=="About"){%>
+                        <li class="nav-item active">
+                          <%}else{%>
+                            <li class="nav-item">
+                              <%}%>
+                              <a class="nav-link" href="/about" style="color: rgb(255, 255, 255); margin-left: 20px;"><i class="fa-solid fa-address-card"></i>About</a>
+                            </li>
+                            <% if (title=="Contact"){%>
+                            <li class="nav-item active">
+                              <%}else{%>
+                                <li class="nav-item">
+                                  <%}%>
+                                  <a class="nav-link" href="/contact" style="color: rgb(255, 255, 255); margin-left: 20px;"><i class="fa-solid fa-address-book"></i>Contact Us</a>
+                                </li>
+          </b>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</body>
+
+</html>

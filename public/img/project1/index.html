@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bug Smasher Game</title>
+        <style>
+            body
+                {
+                    background-color: rgb(0, 0, 0);
+                    background-size: auto;
+                }
+            #scoreButton, #speedButton {
+                margin-left: 90px;
+                margin-bottom: 50px;
+                background-color: cyan; 
+                color: red; 
+                border: 2px solid #d70707;
+                width: 150px;
+                height: 50px;
+                box-shadow: 3px 3px 3px;
+            }
+            #scoreButton:hover{
+                color: #55a32d;
+            }
+            #speedButton:hover{
+                color: #55a32d;
+            }
+            #score {
+                margin: 90px;
+                margin-left: 220px;
+                font-size: 50px;
+                color: rgb(250, 1, 1);
+                font-weight: 1000;
+            }
+            #title {
+                margin-left: 700px;
+                font-size: 30px;
+                font-style: initial;
+                color: rgb(141, 196, 228);
+                font-weight: 1500;
+            }
+            .grid
+            {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "title"><b><h2>BugSmasher</h2></b></div>
+        <div class="grid"> 
+        <div id = "theCanvas"></div>
+        <div style="color: #efecec; float: right; margin-top: 60px;" >
+            <div id = "score"></div>
+            <table>
+                <tr>
+                    <td style="width:200px;">
+                        <button id = "scoreButton"  onclick = "resetScore()">Reset Score</button>
+                    </td>
+                    <td>
+                        <button id = "speedButton" onclick = "resetSpeed()">Reset Speed</button>
+                    </td>
+                </tr>
+            </table>
+            
+            <h1>&nbsp;FOR DIFFICULTY LEVEL: 
+            <br>&nbsp;WHEN YOU TAP ON THE HEAD OF
+            <br>&nbsp;THE INSECT THE SCORE INCREASES </h1></div>
+    </div>
+        <script src="js/game.js"></script>
+    </body>
+</html>

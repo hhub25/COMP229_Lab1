@@ -1,0 +1,45 @@
+<%- include('partials/header.ejs') %>
+<%- include('partials/main_nav.ejs') %>
+
+<!--<img src="img/logo.png" alt="logo">-->
+
+<main class="container" style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <div class="jumbotron" style="text-align: center; background-color: transparent;">
+        <h1 class="display-4" style="font-size: 2.5em; font-weight: bold; color: rgb(207, 180, 90); margin-top: 50px; margin-bottom: 50px;">───────────────────<span style=" color: rgb(0, 0, 0);"> <%= title %> </span>────────────────────</h1>
+    </div>
+
+    <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center; margin-bottom: 30px;">
+        <div class="col-md-4" style="margin-bottom: 20px; display: flex;">
+            <div class="card" style="height: 100%; flex-direction: column; border: 1px solid #000000; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: black;">
+                <img src="/img/bug.png" class="card-img-top" alt="Project 1" style="height: 50%; object-fit: cover; border-bottom: 1px solid #000000;">
+                <div class="card-body" style="flex-grow: 1;">
+                    <a href="/img/project1/index.html" target="_blank" style="text-decoration: none; color: rgb(207, 180, 90);"><h5 class="card-title" style="margin-bottom: 10px; font-weight: bold;">Bug Smasher Game</h5></a>
+                    <p class="card-text" style="color: rgb(255, 255, 255);">The Bug Smasher adventure unfolds in an immersive web-based gaming experience, enticing players with the challenge of crushing numerous bugs within a designated time frame. Each successful bug smashes catapults the player's score to new heights, intensifying the game's dynamics. As the score escalates, the bugs' agility surges, injecting an additional layer of complexity and thrill into the gameplay.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" style="margin-bottom: 20px; display: flex;">
+            <div class="card" style="height: 100%; flex-direction: column; border: 1px solid #000000; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: black;">
+                <img src="/img/p2logo.jpg" class="card-img-top" alt="Project 2" style="height: 50%; object-fit: cover; border-bottom: 1px solid #000000;">
+                <div class="card-body" style="flex-grow: 1;">
+                    <a href="/img/project2/home.html" target="_blank" style="text-decoration: none; color: rgb(207, 180, 90);"><h5 class="card-title" style="margin-bottom: 10px; font-weight: bold;">Real Estate Website</h5></a>
+                    <p class="card-text" style="color: rgb(255, 255, 255);">The Real Estate Hub is an all-encompassing digital platform crafted to streamline the intricacies of property transactions. Boasting an elegant and intuitive interface, the platform highlights three distinct property listings, each imbued with unique features and detailed insights. Whether you're a prospective homebuyer in pursuit of your dream residence or a seller aiming to captivate potential clients, our platform ensures a fluid and immersive browsing experience, revolutionizing your real estate journey.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" style="margin-bottom: 20px; display: flex;">
+            <div class="card" style="height: 100%; flex-direction: column; border: 1px solid #000000; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: black;">
+                <img src="/img/p3logo.jpg" class="card-img-top" alt="Project 3" style="height: 50%; object-fit: cover; border-bottom: 1px solid #000000;">
+                <div class="card-body" style="flex-grow: 1;">
+                    <a href="/img/project3/SRS.pdf" target="_blank" style="text-decoration: none; color: rgb(207, 180, 90);"><h5 class="card-title" style="margin-bottom: 10px; font-weight: bold;">SRS for MyDentist App</h5></a>
+                    <p class="card-text" style="color: rgb(255, 255, 255);">The Software Requirements Specification (SRS) for our state-of-the-art Online Appointment Booking System is meticulously crafted to offer an intricate and exhaustive overview of the functionalities and features embedded in this cutting-edge software solution. This revolutionary system not only facilitates patients in seamlessly scheduling appointments with dentists online but also incorporates advanced attributes like instantaneous notifications, tailored patient profiles, and fortified electronic health records, ushering in a new era of healthcare efficiency and patient-centric service.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include('partials/bottom_nav.ejs') %>
+<%- include('partials/footer.ejs') %>

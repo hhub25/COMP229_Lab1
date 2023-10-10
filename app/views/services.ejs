@@ -1,0 +1,45 @@
+<%- include('partials/header.ejs') %>
+<%- include('partials/main_nav.ejs') %>
+
+<!--<img src="img/logo.png" alt="logo">-->
+
+<main class="container" style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <div class="jumbotron" style="text-align: center; background-color: transparent;">
+        <h1 class="display-4" style="font-size: 2.5em; font-weight: bold; color: rgb(207, 180, 90); margin-top: 50px; margin-bottom: 40px;">───────────────────<span style=" color: rgb(0, 0, 0);"> <%= title %> </span>────────────────────</h1>
+    </div>
+
+    <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center; margin-bottom: 30px;">
+        <div class="col-md-4" style="margin-bottom: 20px; display: flex;">
+            <div class="card" style="height: 100%; flex-direction: column; border: 1px solid #000000; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: black;">
+                <img src="/img/sdd.jpg" class="card-img-top" alt="Service 1" style="flex-shrink: 0; height: 200px; object-fit: cover;">
+                <div class="card-body" style="flex-grow: 1;">
+                    <h3 class="card-title" style="color: rgb(207, 180, 90);">Coding(C#, Java) and Documentation(SRS)</h3>
+                    <p class="card-text" style="color: rgb(255, 255, 255);">Our services encompass top-notch coding expertise in languages like C# and Java, ensuring robust and efficient software solutions tailored to your needs. Additionally, we excel in crafting meticulous Software Requirements Specifications (SRS), providing comprehensive documentation that serves as the roadmap for successful software development, ensuring clarity, and meeting project objectives.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" style="margin-bottom: 20px; display: flex;">
+            <div class="card" style="height: 100%; flex-direction: column; border: 1px solid #000000; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: black;">
+                <img src="/img/wd.jpg" class="card-img-top" alt="Service 2" style="flex-shrink: 0; height: 200px; object-fit: cover;">
+                <div class="card-body" style="flex-grow: 1;">
+                    <h3 class="card-title" style="color: rgb(207, 180, 90);">Web Development</h3>
+                    <p class="card-text" style="color: rgb(255, 255, 255);">Unleash your online capabilities with our professional Web Development solutions. We design captivating, high-performance websites customized to suit your distinct business requirements. Specializing in responsive and user-friendly designs, our websites enhance engagement, empowering you to accomplish your online objectives. Contact us today to elevate your digital presence.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" style="margin-bottom: 20px; display: flex;">
+            <div class="card" style="height: 100%; flex-direction: column; border: 1px solid #000000; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: black;">
+                <img src="/img/ma.jpg" class="card-img-top" alt="Service 3" style="flex-shrink: 0; height: 200px; object-fit: cover;">
+                <div class="card-body" style="flex-grow: 1;">
+                    <h3 class="card-title" style="color: rgb(207, 180, 90);">Database Management</h3>
+                    <p class="card-text" style="color: rgb(255, 255, 255);">Our Database Management services are designed to ensure optimal performance, security, and scalability for your business. We handle database design, implementation, and maintenance, employing industry best practices. From performance tuning to data backup and recovery, our solutions streamline operations and empower your organization with efficient and secure data management.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include('partials/bottom_nav.ejs') %>
+<%- include('partials/footer.ejs') %>
